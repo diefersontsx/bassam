@@ -1,69 +1,33 @@
+import Header from "./header";
 import Image from "next/image";
-import Link from "next/link";
-
 
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="mx-5 flex h-2 max-w-screen-xl items-center justify-between w-full">
-          <Link href="/" className="flex items-center font-display text-2xl">
-            <Image
-              src="/logo.png"
-              alt="Bassam logo"
-              width="30"
-              height="30"
-              className="mr-2 rounded-sm"
-            ></Image>
-            <p>Bassam</p>
-          </Link>
+    <div className="flex min-h-screen flex-col items-center justify-between p-14">
+      <Header />
 
-        <div className="flex lg:flex-1">
-          <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-
-          <ul className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-            <li className="mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-           <Link href='/'>
-              Home
-           </Link>
-
-            </li>
-          <li className="mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-           <Link href='/'>
-              Sobre
-           </Link>
-
-          </li>
-          <li className="mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-           <Link href='/'>
-              Aulas
-           </Link>
-
-          </li>
-          <li className="mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-           <Link href='/'>
-              Contato
-           </Link>
-
-          </li>
-          <li className="mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-          <Link href='/'>
-              Atletas
-           </Link>
-            
-          </li>
-           
-         
-          </ul>
-          </nav>
-        </div>  
-        <button className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black">
-            Entrar
-          </button>       
-      </div>
-            
+      <div className="container mx-auto flex flex-col justify-between w-full items-left left-0 m-64">
+        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          CAMPEÕES SÃO MOLDADOS < br/><h2 className="text text-red-600">NO TATAME
+            </h2>
+            </h1>
+        <span className="font-bold w-3/6">Nossa missão sempre foi formar campeões, não somente
+          para competição, mas sim para a vida, o que você aprender
+          no Jiu Jitsu fará parte do seu ser.</span>
+          
         
-      
-    </main>
+        </div>
+        <Image
+          src="/mestre.png"
+          alt="Imagem Mestre Bassam"
+          width="863"
+          height="588"
+          className="mr-8"
+        >
+
+        </Image>
+      </div>
+
   );
 }
